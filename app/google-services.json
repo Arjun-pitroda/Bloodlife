@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "752192431639",
+    "firebase_url": "https://bloodylife-e61b8.firebaseio.com",
+    "project_id": "bloodylife-e61b8",
+    "storage_bucket": "bloodylife-e61b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752192431639:android:8e8f4e3821964b13a4de52",
+        "android_client_info": {
+          "package_name": "com.example.bloodylife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752192431639-dsjhhe19mo047jopcq6i8do1j3knf8m4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bloodylife",
+            "certificate_hash": "518baf4f25469874887696580a979f699a354432"
+          }
+        },
+        {
+          "client_id": "752192431639-f1k54505grcl91e2vsetu9uvqp29m49p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNDpkMbco4Zd9e5Ecnj-CIH8YFJeRrzyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752192431639-f1k54505grcl91e2vsetu9uvqp29m49p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
