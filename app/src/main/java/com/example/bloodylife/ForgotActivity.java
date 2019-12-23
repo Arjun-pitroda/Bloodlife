@@ -24,7 +24,7 @@ public class ForgotActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot);
         etForgotEmailId=findViewById(R.id.etForgotEmailId);
-        btnResetPassword=findViewById(R.id.btnResetPassword);
+        btnResetPassword=findViewById(R.id.btnLogin);
         firebaseAuth=FirebaseAuth.getInstance();
 
         btnResetPassword.setOnClickListener(new View.OnClickListener() {

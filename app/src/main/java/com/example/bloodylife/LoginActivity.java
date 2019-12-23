@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         tvForgotpassword=findViewById(R.id.tvForgotPassword);
         tvSignup=findViewById(R.id.tvSignup);
         tvGmailSignin=findViewById(R.id.tvGmailSignin);
-        btnLogin=findViewById(R.id.btn_login1);
+        btnLogin=findViewById(R.id.btnLogin);
 
         firebaseAuth=FirebaseAuth.getInstance();
         user=firebaseAuth.getCurrentUser();

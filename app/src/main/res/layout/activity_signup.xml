@@ -23,10 +23,45 @@
 
 
     <EditText
-        android:id="@+id/username1"
+        android:id="@+id/etSignupName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="457dp"
+        android:layout_marginBottom="604dp"
+        android:background="@drawable/et_bg"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etSignupAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="640dp"
+        android:background="@drawable/et_bg"
+        android:hint="Age"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@id/etSignupName"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/etSignupEmailId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="@drawable/et_bg"
         android:hint="@string/email_address"
         android:inputType="textEmailAddress"
@@ -36,13 +71,59 @@
         app:layout_constraintEnd_toStartOf="@id/guideline_right1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/guideline_left1"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/etSignupLocation"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/password1"
+    <Spinner
+        android:id="@+id/spBloodGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@id/etSignupAge" />
+
+    <EditText
+        android:id="@+id/etSignupPhoneNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_bg"
+        android:hint="@string/phoneno"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@id/spBloodGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etSignupLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_bg"
+        android:hint="@string/location"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@id/etSignupPhoneNo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etSignupPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="@drawable/et_bg"
         android:drawableEnd="@drawable/ic_eye"
         android:drawableRight="@drawable/ic_eye"
@@ -52,19 +133,38 @@
         android:textColorHint="@color/login_form_details"
         app:layout_constraintEnd_toStartOf="@id/guideline_right1"
         app:layout_constraintStart_toStartOf="@id/guideline_left1"
-        app:layout_constraintTop_toBottomOf="@+id/username1" />
+        app:layout_constraintTop_toBottomOf="@+id/etSignupEmailId" />
 
-    <Button
-        android:id="@+id/btn_login1"
+    <EditText
+        android:id="@+id/etSignupConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_bg"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawableRight="@drawable/ic_eye"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@+id/etSignupPassword" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="@drawable/btn_bg"
         android:text="REGISTER "
         android:textAllCaps="false"
         android:textColor="@color/login_form_details_medium"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right1"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline_left1"
-        app:layout_constraintTop_toBottomOf="@id/password1" />
+        app:layout_constraintTop_toBottomOf="@id/etSignupConfirmPassword" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
