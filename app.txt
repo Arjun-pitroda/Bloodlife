@@ -13,3 +13,5 @@ http://172.17.0.1:8080/emailexttemplates/addTemplate
 https://github.com/krishdesai62/devops-docker-nodeApp-containerize
 
 https://geekflare.com/create-jenkins-pipeline/
+
+https://medium.com/mozilla-club-bbsr/dockerizing-a-mern-stack-web-application-ebf78babf136
