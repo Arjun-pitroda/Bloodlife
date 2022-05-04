@@ -1,0 +1,15 @@
+sudo docker run -dit --name rehabapp -p 8080:80 -v /home/arjun/Downloads/rehabilitation-yoga/:/usr/local/apache2/htdocs/ httpd:2.4
+
+sudo docker inspect a8417b4762632592f263fc73ebb217aaa718ecba1e8d64782a227c7158319ee5
+
+https://tecadmin.net/tutorial/docker-run-static-website
+
+https://www.section.io/engineering-education/building-a-nodejs-application-using-docker/
+
+https://www.tutorialworks.com/container-networking/
+
+http://172.17.0.1:8080/emailexttemplates/addTemplate
+
+https://github.com/krishdesai62/devops-docker-nodeApp-containerize
+
+https://geekflare.com/create-jenkins-pipeline/
